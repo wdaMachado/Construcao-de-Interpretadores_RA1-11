@@ -1,4 +1,5 @@
 from AnalisadorLexico import *
+from ExecutarExpressao import *
 
 teste = "((5 2 *) (3 2 +) /)"
 teste2 = "(3.14 (4.234 1 *) +)"
@@ -10,16 +11,18 @@ tokens = parseExpressao(teste)
 tokens2 = parseExpressao(teste2)
 tokens3 = parseExpressao(teste3)
 tokens4 = parseExpressao(teste4)
-tokens4 = parseExpressao(teste5)
+tokens5 = parseExpressao(teste5)
 
 testes.append(tokens)
 testes.append(tokens2)
 testes.append(tokens3)
 testes.append(tokens4)
+testes.append(tokens5)
 
-print(tokens3)
-# for teste in testes:
-#     for token in teste:
-#         print(token , end = " ")
-#     print("\n")
-# print("\n")
+print(tokens2)
+for teste in testes:
+    # for token in teste:
+    #     print(token , end = " ")
+    print(executarExpressao(teste))
+    print("\n")
+print("\n")
