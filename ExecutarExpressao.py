@@ -2,10 +2,10 @@
 def executarExpressao(tokens):
 
     def memoria(a):
-        pass
+        return 0
 
     def resposta(a):
-        pass
+        return 0
     
     def tipagem(val):
 
@@ -55,7 +55,7 @@ def executarExpressao(tokens):
             exp_interna = tokens[abertura + 1:index]
             resultado = resolver_expressao(exp_interna)
 
-            tokens[abertura:index + 1] = [str(resultado)]
+            tokens[abertura:index + 1] = [float(resultado)]
             index = abertura
             continue
 
