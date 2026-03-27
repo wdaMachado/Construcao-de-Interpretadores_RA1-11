@@ -1,6 +1,6 @@
 # Construcao-de-Interpretadores_RA1-11
 
-Pedro
-Pedro 
-Pedro
+Pedro Bittencourt
+Pedro Bueno
+Pedro Lyra
 William
